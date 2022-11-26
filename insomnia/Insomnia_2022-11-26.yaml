@@ -1,0 +1,126 @@
+_type: export
+__export_format: 4
+__export_date: 2022-11-26T07:08:48.325Z
+__export_source: insomnia.desktop.app:v2022.6.0
+resources:
+  - _id: req_325f5ed0602f4e83a0f52b6e94bca3ff
+    parentId: wrk_ccb91d2c64564a828deaca2f04e6d517
+    modified: 1669446398567
+    created: 1669419360773
+    url: https://api-ap-northeast-1.hygraph.com/v2/clax22wf30d2k01up6pta5cnn/master
+    name: getAllPosts
+    description: ""
+    method: POST
+    body:
+      mimeType: application/graphql
+      text: '{"query":"query {\n\tposts {\n\t\ttitle\n\t\tdate\n\t\tslug\n\t\tauthor
+        {\n\t\t\tname\n\t\t\tpicture
+        {\n\t\t\t\turl\n\t\t\t}\n\t\t}\n\t\tcoverImage
+        {\n\t\t\turl\n\t\t}\n\t\texcerpt\n\t}\n}"}'
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1669419360773
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_ccb91d2c64564a828deaca2f04e6d517
+    parentId: null
+    modified: 1669440732535
+    created: 1669419356960
+    name: nextjs-starter-ts-hygraph
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_17195f4282fa48668508423bf3423de5
+    parentId: wrk_ccb91d2c64564a828deaca2f04e6d517
+    modified: 1669446399852
+    created: 1669441630058
+    url: https://api-ap-northeast-1.hygraph.com/v2/clax22wf30d2k01up6pta5cnn/master
+    name: getPostBySlug
+    description: ""
+    method: POST
+    body:
+      mimeType: application/graphql
+      text: '{"query":"query {\n\tpost(where: {\n\t\tslug:
+        \"technical-seo-with-hygraph\"\n\t})
+        {\n\t\ttitle\n\t\tdate\n\t\tslug\n\t\tauthor
+        {\n\t\t\tname\n\t\t\tpicture
+        {\n\t\t\t\turl\n\t\t\t}\n\t\t}\n\t\tcoverImage
+        {\n\t\t\turl\n\t\t}\n\t\texcerpt\n\t}\n}"}'
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1669395905250.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d411a57e1db541fb8017f0e8305a74cf
+    parentId: wrk_ccb91d2c64564a828deaca2f04e6d517
+    modified: 1669446497754
+    created: 1669446410399
+    url: https://api-ap-northeast-1.hygraph.com/v2/clax22wf30d2k01up6pta5cnn/master
+    name: getPostBySlugWithContent
+    description: ""
+    method: POST
+    body:
+      mimeType: application/graphql
+      text: '{"query":"query {\n\tpost(where: {\n\t\tslug:
+        \"technical-seo-with-hygraph\"\n\t})
+        {\n\t\ttitle\n\t\tdate\n\t\tslug\n\t\tauthor
+        {\n\t\t\tname\n\t\t\tpicture {\n\t\t\t\turl\n\t\t\t}\n\t\t}\n\t\tcontent
+        {\n\t\t\tmarkdown\n\t\t}\n\t}\n}"}'
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1669384177489.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_dfa7bf8a0968a7282472b2c12f75f5e7e45c4ae2
+    parentId: wrk_ccb91d2c64564a828deaca2f04e6d517
+    modified: 1669419356965
+    created: 1669419356965
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1669419356965
+    _type: environment
+  - _id: jar_dfa7bf8a0968a7282472b2c12f75f5e7e45c4ae2
+    parentId: wrk_ccb91d2c64564a828deaca2f04e6d517
+    modified: 1669419356966
+    created: 1669419356966
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_9c256d7e28c146fabc3a98234a67a793
+    parentId: wrk_ccb91d2c64564a828deaca2f04e6d517
+    modified: 1669419356961
+    created: 1669419356961
+    fileName: yayopii-hotels-higraph
+    contents: ""
+    contentType: yaml
+    _type: api_spec
