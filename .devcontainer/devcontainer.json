@@ -6,7 +6,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"bradlc.vscode-tailwindcss"
 			]
 		}
 	}

@@ -40,7 +40,7 @@ export default function Post({ post, morePosts, preview }: Props) {
               </Head>
               <PostHeader
                 title={post.title}
-                coverImage={post.coverImage}
+                coverImage={post.coverImage.url}
                 date={post.date}
                 author={post.author}
               />
