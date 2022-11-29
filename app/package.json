@@ -5,25 +5,27 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc",
-    "build-css": "tailwindcss build styles/index.css -o dist/style.css"
+    "build-css": "tailwindcss build styles/index.css -o dist/style.css",
+    "css": "tailwindcss -i styles/index.css -o dist/style.css --watch"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
-    "date-fns": "^2.28.0",
+    "classnames": "^2.3.2",
+    "date-fns": "^2.29.3",
     "next": "latest",
     "next-pwa": "^5.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
-    "typescript": "latest"
+    "typescript": "latest",
+    "tailwindcss": "latest"
   },
   "devDependencies": {
-    "@types/node": "^18.0.3",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
     "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.2.4"
+    "postcss": "^8.4.19",
+    "postcss-preset-env": "^7.8.3"
   }
 }

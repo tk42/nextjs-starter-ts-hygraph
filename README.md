@@ -2,4 +2,9 @@
 
 NextJS starter with Typescript connected to hygraph.
 
+ - NextJS
+ - Typescript
+ - tailwindcss
+ - HeadlessCMS: hygraph
+
 ![image](./image.png)
