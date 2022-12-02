@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  graphql-editor:
+    image: ghcr.io/tk42/graphql-editor:latest
+    ports: 
+     - 8080:3000
